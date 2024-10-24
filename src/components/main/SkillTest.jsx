@@ -1,10 +1,10 @@
 import React from 'react'
-import Index from '../skill-test'
+import SkillIndex from '../skill-test/SkillIndex'
 
 const SkillTest = () => {
   return (
     <div>
-      <Index/>
+      <SkillIndex/>
     </div>
   )
 }

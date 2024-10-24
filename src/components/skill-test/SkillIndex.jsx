@@ -2,7 +2,7 @@ import React from 'react'
 import Section1 from './Section1'
 import Section2 from './Section2'
 
-const Index = () => {
+const SkillIndex = () => {
     return (
         <div className='w-[95%] mx-auto p-5'>
             <div className='font-custom w-full space-y-5'>
@@ -23,4 +23,4 @@ const Index = () => {
     )
 }
 
-export default Index
+export default SkillIndex
