@@ -62,7 +62,7 @@ const Home = () => {
 
                 {/* For mobile screens */}
                 <div className='w-full block sm:hidden'>
-                    <div className='fixed bottom-0 left-0 right-0 bg-black z-[100] border-t border-gray-300'>
+                    <div className='fixed bottom-0 left-0 right-0 bg-white z-[100] border-t border-gray-400'>
                         <ul className='flex justify-around p-2'>
                             {links.map((link) => (
                                 <li
@@ -77,10 +77,10 @@ const Home = () => {
                                                 : 'text-gray-600'
                                                 }`}
                                         >
-                                            <div className='text-lg sm:text-3xl lg:text-2xl'>
+                                            <div className='text-xl'>
                                                 {link.logo}
                                             </div>
-                                            <span className='text-xs'>{link.element}</span>
+                                            <span className='text-sm'>{link.element}</span>
                                         </div>
                                     </Link>
                                 </li>
