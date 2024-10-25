@@ -17,7 +17,7 @@ const Test = () => {
                 </div>
                 <button
                     onClick={() => setUpdate(prev => !prev)}
-                    className='bg-blue-900 px-8 py-2 text-white rounded-md'
+                    className='bg-blue-900 hover:bg-blue-700 px-8 py-2 text-white rounded-md'
                 >
                     Update
                 </button> 
