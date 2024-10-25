@@ -13,7 +13,7 @@ const Statistics = () => {
       <div className='flex flex-wrap lg:flex-nowrap justify-between gap-4'>
 
         {/* rank section */}
-        <div className='flex-1 flex flex-col lg:flex-row items-center lg:items-start py-5 gap-3 border-r border-gray-300 lg:pr-1'>
+        <div className='flex-1 flex flex-col lg:flex-row items-center lg:items-start py-5 gap-3 sm:border-r sm:border-gray-300 lg:pr-1'>
           <div className='bg-gray-200 rounded-full w-14 h-14 flex items-center justify-center'>
             <img src={trophy} alt='logo' width={35} />
           </div>
@@ -24,7 +24,7 @@ const Statistics = () => {
         </div>
 
         {/* percentile section */}
-        <div className='flex-1 flex flex-col lg:flex-row items-center lg:items-start py-5 gap-3 border-r border-gray-300 lg:px-1'>
+        <div className='flex-1 flex flex-col lg:flex-row items-center lg:items-start py-5 gap-3 sm:border-r sm:border-gray-300 lg:px-1'>
           <div className='bg-gray-200 rounded-full w-14 h-14 flex items-center justify-center'>
             <img src={paperboard} alt='logo' width={35} />
           </div>

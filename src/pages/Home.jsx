@@ -62,7 +62,7 @@ const Home = () => {
 
                 {/* For mobile screens */}
                 <div className='w-full block sm:hidden'>
-                    <div className='fixed bottom-0 left-0 right-0 bg-white border-t border-gray-300'>
+                    <div className='fixed bottom-0 left-0 right-0 bg-black z-[100] border-t border-gray-300'>
                         <ul className='flex justify-around p-2'>
                             {links.map((link) => (
                                 <li
@@ -73,7 +73,7 @@ const Home = () => {
                                     <Link to={link.path}>
                                         <div
                                             className={`flex flex-col items-center p-2 transition-all duration-300 ${selected === link.element
-                                                ? 'text-blue-600'
+                                                ? 'text-blue-700'
                                                 : 'text-gray-600'
                                                 }`}
                                         >
@@ -90,7 +90,7 @@ const Home = () => {
                 </div>
 
                 {/* Outlet for page content */}
-                <div className='w-full sm:w-[85%]'>
+                <div className='w-full sm:w-[85%]'> 
                     <Outlet />
                 </div>
             </div>
