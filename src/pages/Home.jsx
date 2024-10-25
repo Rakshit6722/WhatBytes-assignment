@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { Outlet } from 'react-router';
+import { Outlet, useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
 import { RiBarChartFill } from "react-icons/ri";
 import { TfiMedallAlt } from "react-icons/tfi";
 import { FaRegFile } from "react-icons/fa";
+import { matchPath } from 'react-router';
 
 const Home = () => {
     const links = [
@@ -24,7 +25,11 @@ const Home = () => {
         },
     ];
 
-    const [selected, setSelected] = useState('Skill Test');
+    const location = useLocation()
+
+    const matchRoute = (route) => {
+        return matchPath({ path: route }, location.pathname)
+    }
 
     return (
         <div className='font-custom h-full'>
@@ -35,12 +40,11 @@ const Home = () => {
                         {links.map((link) => (
                             <li
                                 key={link.element}
-                                onClick={() => setSelected(link.element)}
                                 className={`cursor-pointer`}
                             >
                                 <Link to={link.path}>
                                     <div
-                                        className={`flex gap-5 items-center p-4 transition-all duration-300 ${selected === link.element
+                                        className={`flex gap-5 items-center p-4 transition-all duration-300 ${matchRoute(link.path)
                                             ? 'bg-blue-100 text-blue-600 rounded-r-full'
                                             : ''
                                             }`}
@@ -67,12 +71,11 @@ const Home = () => {
                             {links.map((link) => (
                                 <li
                                     key={link.element}
-                                    onClick={() => setSelected(link.element)}
                                     className={`cursor-pointer`}
                                 >
                                     <Link to={link.path}>
                                         <div
-                                            className={`flex flex-col items-center p-2 transition-all duration-300 ${selected === link.element
+                                            className={`flex flex-col items-center p-2 transition-all duration-300 ${matchRoute(link.path)
                                                 ? 'text-blue-700'
                                                 : 'text-gray-600'
                                                 }`}
@@ -90,7 +93,7 @@ const Home = () => {
                 </div>
 
                 {/* Outlet for page content */}
-                <div className='w-full sm:w-[85%]'> 
+                <div className='w-full sm:w-[85%]'>
                     <Outlet />
                 </div>
             </div>
