@@ -51,3 +51,17 @@ A frontend application created using **React** and **Vite**, designed as a small
 2. Redux
 3. Recharts
 4. React-Router-DOM
+
+## Screenshots -> Large Screens
+
+![Screenshots1](./images/large_screen1.png)
+![Screenshots2](./images/large_screen2.png)
+![Screenshots3](./images/large_screen3.png)
+
+
+## Screenshots -> Mobile Screens
+
+![Screenshots1](./images/mobile_screen1.png)
+![Screenshots2](./images/mobile_screen2.png)
+![Screenshots3](./images/mobile_screen3.png)
+![Screenshots3](./images/mobile_screen4.png)
