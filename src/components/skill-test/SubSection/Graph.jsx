@@ -12,7 +12,7 @@ const Graph = () => {
         <div className=''>
           <p><span className='font-bold text-gray-700'>You scored {percentile || 30}% percentile</span> which is lower than the <br/> average percentile 72% of all the engineers who took this assignment</p>
         </div>
-        <div className='hidden sm:block bg-gray-200 w-14 h-14 flex items-center justify-center rounded-full mb-10'>
+        <div className='hidden sm:flex bg-gray-200 w-14 h-14 items-center justify-center rounded-full mb-10'>
           <img src={graph} alt='graph image' width={20}/>
         </div>
       </div>
